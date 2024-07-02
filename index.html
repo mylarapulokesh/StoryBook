@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Interactive Storybook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="loki">Welcome to Your Storybook</h1>
+        <form id="storybookForm">
+            <div class="name1">
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" name="name" required>
+            </div>
+            <div class="name2">
+                <br>
+                <br>
+            <label for="character">Choose a character:</label>
+            <select id="character" name="character">
+                <option value="wizard">Wizard</option>
+                <option value="knight">Knight</option>
+                <option value="princess">Princess</option>
+            </select>
+            </div>
+            <div class="name3">
+                <br>
+                <br>
+            <button type="submit">Start Story</button>
+            </div>
+        </form>
+        <div id="story" class="hidden">
+            <p id="storyContent"></p>
+            <button id="nextButton" class="hidden">Next</button>
+        </div>
+    </div>
+    <script src="proj.js"></script>
+</body>
+</html>
